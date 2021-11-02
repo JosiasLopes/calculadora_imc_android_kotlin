@@ -38,4 +38,9 @@ class MainActivity : AppCompatActivity() {
         super.onStop()
         Log.w("LyfeCicle","onStop é executado quando a aplicação fica um tempo parada")
     }
+
+    override fun onDestroy(){
+        super.onDestroy()
+        Log.w("LyfeCicle","onDestroy é executado quando a aplicação é encerrada")
+    }
 }
